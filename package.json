@@ -1,0 +1,19 @@
+{
+  "name": "mcp-crud-server",
+  "version": "1.0.0",
+  "description": "Servidor MCP con CRUD sobre base de datos, autenticación por tokens y OAuth",
+  "type": "module",
+  "license": "GPL-3.0",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js http",
+    "start:stdio": "node --env-file-if-exists=.env src/index.js stdio",
+    "db:init": "node --env-file-if-exists=.env bin/admin.js db-init",
+    "admin": "node --env-file-if-exists=.env bin/admin.js",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

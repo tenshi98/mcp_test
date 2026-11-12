@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mcp-crud": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "http://127.0.0.1:3000/mcp", "--header", "Authorization:${AUTH_HEADER}"],
+      "env": { "AUTH_HEADER": "Bearer mcp_<token>" }
+    }
+  }
+}

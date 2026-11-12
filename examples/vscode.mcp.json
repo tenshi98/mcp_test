@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "mcp-crud": {
+      "type": "http",
+      "url": "http://127.0.0.1:3000/mcp",
+      "headers": { "Authorization": "Bearer ${input:mcp-token}" }
+    }
+  },
+  "inputs": [{ "type": "promptString", "id": "mcp-token", "description": "Token MCP", "password": true }]
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mcp-crud": {
+      "command": "node",
+      "args": ["/RUTA/ABSOLUTA/mcp_test/src/index.js", "stdio"],
+      "env": {
+        "DB_PATH": "/RUTA/ABSOLUTA/mcp_test/data/mcp.db",
+        "TOKEN_PEPPER": "<mismo valor que en .env>",
+        "MCP_TOKEN": "mcp_<token emitido con npm run admin -- token-issue>",
+        "LOG_FILE": "/RUTA/ABSOLUTA/mcp_test/logs/server.log"
+      }
+    }
+  }
+}
